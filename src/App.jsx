@@ -128,8 +128,8 @@ const ScenarioBar = ({ active, title, prob, description, onClick }) => (
     aria-pressed={active}
     onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClick(); } }}
     className={`cursor-pointer p-4 rounded-lg border transition-all duration-300 relative overflow-hidden outline-none focus:ring-2 focus:ring-indigo-500/50 ${active
-        ? 'bg-indigo-900/20 border-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.15)]'
-        : 'bg-slate-800/50 border-slate-700 hover:border-slate-600'
+      ? 'bg-indigo-900/20 border-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.15)]'
+      : 'bg-slate-800/50 border-slate-700 hover:border-slate-600'
       }`}
   >
     <div className="flex justify-between items-center mb-2">
@@ -270,7 +270,7 @@ const RadarChart = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {metrics.map((m) => (
             <div key={m.key} className="flex items-center justify-between group p-2 hover:bg-slate-800/50 rounded transition-colors border border-transparent hover:border-slate-700/50">
               <div className="flex items-center gap-2">
@@ -547,8 +547,8 @@ const App = () => {
               const isActive = i === 1 || i === 2; // Active range Level 2-3
               return (
                 <div key={level.name} className={`p-3 rounded border transition-all ${isActive
-                    ? 'bg-indigo-500/10 border-indigo-500/50 shadow-sm'
-                    : 'bg-slate-800 border-slate-700 text-slate-500'
+                  ? 'bg-indigo-500/10 border-indigo-500/50 shadow-sm'
+                  : 'bg-slate-800 border-slate-700 text-slate-500'
                   }`}>
                   <div className="font-mono text-[10px] opacity-50 mb-1">LEVEL {i + 1}</div>
                   <div className={`font-bold ${isActive ? 'text-indigo-300' : ''}`}>{level.name}</div>
@@ -696,13 +696,13 @@ const App = () => {
                   </div>
                   {/* Chart Area */}
                   <div className="flex-1 flex items-end justify-center gap-4 h-full border-l border-b border-slate-700 pl-4 pb-1">
-                    <div className="w-16 bg-emerald-500/20 border border-emerald-500/50 h-[80%] flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-[80%] flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
                       Senior<br />Archs
                     </div>
-                    <div className="w-16 bg-rose-500/10 border-t border-rose-500/30 h-[70%] flex flex-col justify-end p-2 text-center text-xs text-rose-300 mx-8">
+                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-[70%] flex flex-col justify-end p-2 text-center text-xs text-rose-300 mx-2 sm:mx-8">
                       Junior<br />Middle
                     </div>
-                    <div className="w-16 bg-blue-500/20 border border-blue-500/50 h-[80%] flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-[80%] flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
                       Physical<br />Labor
                     </div>
                   </div>
@@ -727,13 +727,13 @@ const App = () => {
                   </div>
                   {/* Chart Area */}
                   <div className="flex-1 flex items-end justify-center gap-4 h-full border-l border-b border-slate-700 pl-4 pb-1">
-                    <div className="w-16 bg-emerald-500/20 border border-emerald-500/50 h-full flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-full flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
                       Senior<br />Archs
                     </div>
-                    <div className="w-16 bg-rose-500/10 border-t border-rose-500/30 h-1/4 flex flex-col justify-end p-2 text-center text-xs text-rose-300 mx-8">
+                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-1/4 flex flex-col justify-end p-2 text-center text-xs text-rose-300 mx-2 sm:mx-8">
                       Junior<br />Middle
                     </div>
-                    <div className="w-16 bg-blue-500/20 border border-blue-500/50 h-3/4 flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-3/4 flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
                       Physical<br />Labor
                     </div>
                   </div>
@@ -758,13 +758,13 @@ const App = () => {
                   </div>
                   {/* Chart Area */}
                   <div className="flex-1 flex items-end justify-center gap-4 h-full border-l border-b border-slate-700 pl-4 pb-1">
-                    <div className="w-16 bg-emerald-500/20 border border-emerald-500/50 h-[25%] flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-[25%] flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
                       Senior<br />Archs
                     </div>
-                    <div className="w-16 bg-rose-500/10 border-t border-rose-500/30 h-[2px] flex flex-col justify-end p-0 text-center text-xs text-rose-300 mx-8 overflow-visible">
+                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-[2px] flex flex-col justify-end p-0 text-center text-xs text-rose-300 mx-2 sm:mx-8 overflow-visible">
                       <span className="-mb-6">Junior</span>
                     </div>
-                    <div className="w-16 bg-blue-500/20 border border-blue-500/50 h-full flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-full flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
                       Physical<br />Labor
                     </div>
                   </div>
