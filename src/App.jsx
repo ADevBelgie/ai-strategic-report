@@ -695,14 +695,14 @@ const App = () => {
                     <span className="text-[10px] text-slate-500 font-mono -rotate-90 whitespace-nowrap tracking-widest">REL. DEMAND</span>
                   </div>
                   {/* Chart Area */}
-                  <div className="flex-1 flex items-end justify-center gap-4 h-full border-l border-b border-slate-700 pl-4 pb-1">
-                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-[80%] flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
+                  <div className="flex-1 flex items-end justify-center gap-1 sm:gap-4 h-full border-l border-b border-slate-700 pl-2 sm:pl-4 pb-1">
+                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-[80%] flex flex-col justify-end p-1 sm:p-2 text-center text-xs text-emerald-300 rounded-t">
                       Senior<br />Archs
                     </div>
-                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-[70%] flex flex-col justify-end p-2 text-center text-xs text-rose-300 mx-2 sm:mx-8">
+                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-[70%] flex flex-col justify-end p-1 sm:p-2 text-center text-xs text-rose-300 mx-0 sm:mx-8">
                       Junior<br />Middle
                     </div>
-                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-[80%] flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-[80%] flex flex-col justify-end p-1 sm:p-2 text-center text-xs text-blue-300 rounded-t">
                       Physical<br />Labor
                     </div>
                   </div>
@@ -726,14 +726,14 @@ const App = () => {
                     <span className="text-[10px] text-slate-500 font-mono -rotate-90 whitespace-nowrap tracking-widest">REL. DEMAND</span>
                   </div>
                   {/* Chart Area */}
-                  <div className="flex-1 flex items-end justify-center gap-4 h-full border-l border-b border-slate-700 pl-4 pb-1">
-                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-full flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
+                  <div className="flex-1 flex items-end justify-center gap-1 sm:gap-4 h-full border-l border-b border-slate-700 pl-2 sm:pl-4 pb-1">
+                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-full flex flex-col justify-end p-1 sm:p-2 text-center text-xs text-emerald-300 rounded-t">
                       Senior<br />Archs
                     </div>
-                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-1/4 flex flex-col justify-end p-2 text-center text-xs text-rose-300 mx-2 sm:mx-8">
+                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-1/4 flex flex-col justify-end p-1 sm:p-2 text-center text-xs text-rose-300 mx-0 sm:mx-8">
                       Junior<br />Middle
                     </div>
-                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-3/4 flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-3/4 flex flex-col justify-end p-1 sm:p-2 text-center text-xs text-blue-300 rounded-t">
                       Physical<br />Labor
                     </div>
                   </div>
@@ -757,14 +757,14 @@ const App = () => {
                     <span className="text-[10px] text-slate-500 font-mono -rotate-90 whitespace-nowrap tracking-widest">REL. DEMAND</span>
                   </div>
                   {/* Chart Area */}
-                  <div className="flex-1 flex items-end justify-center gap-4 h-full border-l border-b border-slate-700 pl-4 pb-1">
-                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-[25%] flex flex-col justify-end p-2 text-center text-xs text-emerald-300 rounded-t">
+                  <div className="flex-1 flex items-end justify-center gap-1 sm:gap-4 h-full border-l border-b border-slate-700 pl-2 sm:pl-4 pb-1">
+                    <div className="flex-1 max-w-[64px] bg-emerald-500/20 border border-emerald-500/50 h-[25%] flex flex-col justify-end p-1 sm:p-2 text-center text-xs text-emerald-300 rounded-t">
                       Senior<br />Archs
                     </div>
-                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-[2px] flex flex-col justify-end p-0 text-center text-xs text-rose-300 mx-2 sm:mx-8 overflow-visible">
+                    <div className="flex-1 max-w-[64px] bg-rose-500/10 border-t border-rose-500/30 h-[2px] flex flex-col justify-end p-0 text-center text-xs text-rose-300 mx-0 sm:mx-8 overflow-visible">
                       <span className="-mb-6">Junior</span>
                     </div>
-                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-full flex flex-col justify-end p-2 text-center text-xs text-blue-300 rounded-t">
+                    <div className="flex-1 max-w-[64px] bg-blue-500/20 border border-blue-500/50 h-full flex flex-col justify-end p-1 sm:p-2 text-center text-xs text-blue-300 rounded-t">
                       Physical<br />Labor
                     </div>
                   </div>
