@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: Dark mode background for the whole body */
+body {
+  @apply bg-slate-950;
+  margin: 0;
+}
