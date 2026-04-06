@@ -492,6 +492,16 @@ const App = () => {
       </header>
 
       <main className="max-w-5xl mx-auto px-6 py-8 space-y-8">
+        {/* V1 Warning Banner */}
+        <div className="bg-amber-500/10 border border-amber-500/20 rounded-xl p-4 mb-8 flex items-center gap-4 animate-in fade-in slide-in-from-top-4 duration-700">
+          <div className="p-2 bg-amber-500/20 rounded-lg text-amber-500">
+            <AlertTriangle size={20} />
+          </div>
+          <div className="text-sm text-amber-200/80 leading-relaxed">
+            <span className="font-bold text-amber-400">Archive Version:</span> This is the November 2025 V1 report. 
+            The updated April 2026 V2 report is available at <a href="https://ai-strategic-report-april-2026.vercel.app" className="text-amber-400 underline underline-offset-4 hover:text-amber-300 transition-colors">ai-strategic-report-april-2026.vercel.app</a>.
+          </div>
+        </div>
 
         {/* Executive Summary Hero */}
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
